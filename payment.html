@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
+
+    <title>Payment - WatchStore</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>WatchStore</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="payment">
+        <div class="container">
+            <h2>Payment Information</h2>
+            <p>Please enter your payment details below to complete your purchase.</p>
+
+            <!-- Payment Form -->
+            <div class="payment-form">
+                <form id="payment-form" action="submit_payment.php" method="POST">
+                    <!-- Billing Address -->
+                    <h3>Billing Address</h3>
+                    <div class="form-group">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="billing-address">Billing Address:</label>
+                        <input type="text" id="billing-address" name="billing-address" required placeholder="Enter your billing address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required placeholder="Enter your city">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="postal-code">Postal Code:</label>
+                        <input type="text" id="postal-code" name="postal-code" required placeholder="Enter your postal code">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" required placeholder="Enter your country">
+                    </div>
+
+                    <!-- Payment Details -->
+                    <h3>Payment Details</h3>
+                    <div class="form-group">
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number" required placeholder="Enter your card number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date (MM/YY):</label>
+                        <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/YY">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" required placeholder="Enter CVV">
+                    </div>
+
+                    <!-- Submit Button -->
+                 
+                </form>
+                <a href="index.html">  <button type="submit" class="submit-btn" onclick="meet()">Pay Now</button> 
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 WatchStore. All Rights Reserved.</p>
+    </footer>
+
+    <script > function meet()       
+    {
+        alert("Payment Sucessfully Done"); }
+        </script>
+</body>
+</html>
